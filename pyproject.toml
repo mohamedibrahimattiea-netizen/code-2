@@ -17,5 +17,14 @@ dependencies = [
     "scikit-learn"
 ]
 
+[project.optional-dependencies]
+tests = ["pytest>=8,<9"]
+
 [project.urls]
 "Homepage" = "https://example.com/fraud_detection"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
